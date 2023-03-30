@@ -1,0 +1,93 @@
+POST http://localhost:3001/api/subgreddiits/create/63e6bf0cd50cf8e021f75e5c
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U2YmYwY2Q1MGNmOGUwMjFmNzVlNWMiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJlbWFpbCI6ImpvaG4iLCJpYXQiOjE2NzYxMzA1MDIsImV4cCI6MTY3ODcyMjUwMn0.D9Nc3pH4fOTRBs3s3sQ3cWhA34PH6qOZuPapN4HOMKU
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "description": "test",
+    "tags": ["test"],
+    "banned": ["test"],
+    "createdon": "2023-02-14"
+}
+
+###
+
+GET http://localhost:3001/api/subgreddiits/getall
+
+###
+
+DELETE http://localhost:3001/api/subgreddiits/deleteall
+
+###
+
+PUT http://localhost:3001/api/subgreddiits/update/63f794f869a314e077af8877
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y3OTRmODY5YTMxNGUwNzdhZjg4NzciLCJ1c2VybmFtZSI6ImpvaG41IiwiZW1haWwiOiJqb2huNSIsImlhdCI6MTY3NzE3Nzg5NiwiZXhwIjoxNjc5NzY5ODk2fQ.TO3GwZYKYzOuZ1jFtSToO1QJQmEXtQ4OdHVsW7nISuA
+Content-Type: application/json
+
+{
+    "id": "63f5e1c42f787e6e57733cc7",
+    "type": "request",
+    "normierequest": "63f794f869a314e077af8877"
+}
+
+###
+
+PUT http://localhost:3001/api/subgreddiits/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzE2MjM2NSwiZXhwIjoxNjc5NzU0MzY1fQ.pa75ZyWeF2Ar9bOQ5rBxTtYDTJJGHh5omfyhO_VTa6k
+Content-Type: application/json
+
+{
+    "id": "63f5e1c42f787e6e57733cc7",
+    "type": "normie",
+    "normie": "63f78815d71156578f22f995"
+}
+
+###
+
+PUT http://localhost:3001/api/subgreddiits/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzE2MjM2NSwiZXhwIjoxNjc5NzU0MzY1fQ.pa75ZyWeF2Ar9bOQ5rBxTtYDTJJGHh5omfyhO_VTa6k
+Content-Type: application/json
+
+{
+    "id": "63f5e1c42f787e6e57733cc7",
+    "type": "banned",
+    "bannednormie": "63f78815d71156578f22f995"
+}
+
+###
+
+PUT http://localhost:3001/api/subgreddiits/update/63e6bf0cd50cf8e021f75e5c
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U2YmYwY2Q1MGNmOGUwMjFmNzVlNWMiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJlbWFpbCI6ImpvaG4iLCJpYXQiOjE2NzYxMzA1MDIsImV4cCI6MTY3ODcyMjUwMn0.D9Nc3pH4fOTRBs3s3sQ3cWhA34PH6qOZuPapN4HOMKU
+Content-Type: application/json
+
+{
+    "id": "63ea1875d7f594d074c4775c",
+    "type": "removenormie",
+    "normie": "2"
+}
+
+###
+
+PUT http://localhost:3001/api/subgreddiits/update/63e6bf0cd50cf8e021f75e5c
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U2YmYwY2Q1MGNmOGUwMjFmNzVlNWMiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJlbWFpbCI6ImpvaG4iLCJpYXQiOjE2NzYxMzA1MDIsImV4cCI6MTY3ODcyMjUwMn0.D9Nc3pH4fOTRBs3s3sQ3cWhA34PH6qOZuPapN4HOMKU
+Content-Type: application/json
+
+{
+    "id": "63ea1875d7f594d074c4775c",
+    "type": "removebanned",
+    "bannednormie": "3"
+}
+
+###
+
+PUT http://localhost:3001/api/subgreddiits/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzE2MjM2NSwiZXhwIjoxNjc5NzU0MzY1fQ.pa75ZyWeF2Ar9bOQ5rBxTtYDTJJGHh5omfyhO_VTa6k
+Content-Type: application/json
+
+{
+    "id": "63f5e1c42f787e6e57733cc7",
+    "type": "removerequest",
+    "normierequest": "63f794f869a314e077af8877"
+}
+
+###

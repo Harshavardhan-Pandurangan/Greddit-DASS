@@ -1,0 +1,109 @@
+POST http://localhost:3001/api/posts/create/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzIxNjI1OSwiZXhwIjoxNjc5ODA4MjU5fQ.ES07Gypw5YkbB_4KsvatQF-CCGhyxebh5uROkBCSgYY
+Content-Type: application/json
+
+{
+    "title": "My first post",
+    "text": "This is my first post",
+    "subgreddiit": "63ea1875d7f594d074c4775c"
+}
+
+###
+
+GET http://localhost:3001/api/posts/getall
+
+###
+
+DELETE http://localhost:3001/api/posts/deleteall
+
+###
+
+PUT http://localhost:3001/api/posts/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "type": "upvote",
+    "id": "63ea4d2959bd09af0f9c73d3"
+}
+
+###
+
+PUT http://localhost:3001/api/posts/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "type": "downvote",
+    "id": "63ea4d2959bd09af0f9c73d3"
+}
+
+###
+
+PUT http://localhost:3001/api/posts/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "type": "unvote",
+    "id": "63ea4d2959bd09af0f9c73d3"
+}
+
+###
+
+PUT http://localhost:3001/api/posts/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "type": "comment",
+    "id": "63ea4d3859bd09af0f9c73d6",
+    "comment": {
+        "text": "This is a comment",
+        "postedby": "63e9ab782659354279519644"
+    }
+}
+
+###
+
+PUT http://localhost:3001/api/posts/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "type": "deleteComment",
+    "id": "63ea4d3859bd09af0f9c73d6",
+    "commentid": "63ea5223de33ff92ada95363"
+}
+
+###
+
+GET http://localhost:3001/api/posts/get/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "id": "63ea4d3859bd09af0f9c73d6"
+}
+
+###
+
+GET http://localhost:3001/api/posts/get/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "subgreddiit": "test"
+}
+
+###
+
+DELETE http://localhost:3001/api/posts/delete/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI5MDI1NiwiZXhwIjoxNjc4ODgyMjU2fQ.YvXsyi-2z4VqfVgQtHPxAvvSoqeGs7o6LZ_NtXR0lm8
+Content-Type: application/json
+
+{
+    "id": "63ea4d2959bd09af0f9c73d3"
+}
+
+###

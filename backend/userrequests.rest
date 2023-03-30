@@ -1,0 +1,115 @@
+POST http://localhost:3001/api/users/create
+Content-Type: application/json
+
+{
+	"firstname": "John",
+	"lastname": "Doe",
+	"username": "john6",
+	"password": "dummy50",
+	"email": "john6",
+	"dob": "1999-01-02",
+	"contactnumber": 9090909090
+}
+
+###
+
+GET http://localhost:3001/api/users/getusers
+
+###
+
+DELETE  http://localhost:3001/api/users/delete/63e6c1cb3763673d28ad43c7
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U2YzFjYjM3NjM2NzNkMjhhZDQzYzciLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJlbWFpbCI6ImpvaG40IiwiaWF0IjoxNjc2MTMwNzAxLCJleHAiOjE2Nzg3MjI3MDF9.i8rlKP32TNn6WjxOfe-SDJgFsUhOWZFFo8RMiiIGkUM
+
+###
+
+GET http://localhost:3001/api/users/verify
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U2YmYwY2Q1MGNmOGUwMjFmNzVlNWMiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJlbWFpbCI6ImpvaG4iLCJpYXQiOjE2NzYxMzA1MDIsImV4cCI6MTY3ODcyMjUwMn0.D9Nc3pH4fOTRBs3s3sQ3cWhA34PH6qOZuPapN4HOMKU
+
+###
+
+POST http://localhost:3001/api/users/login
+Content-Type: application/json
+
+{
+	"email": "rockingharsha71@gmail.com",
+	"password": "Harsha@1234"
+}
+
+###
+
+GET http://localhost:3001/api/users/get/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzA2MTEwNywiZXhwIjoxNjc5NjUzMTA3fQ.AfIoeWDPO5sXxC59HcoZRttZdy38PZ5K3ZNOhpZU9ic
+
+###
+
+PUT http://localhost:3001/api/users/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjI2MDU1MCwiZXhwIjoxNjc4ODUyNTUwfQ.ele418Wl04TyhUCvISg_VxbIINTCmKj3P_Q2PlwP8VU
+Content-Type: application/json
+
+{
+	"firstname": "Harshavardhan",
+    "lastname": "Pandurangan",
+    "username": "harsha",
+    "password": "Harsha@1234",
+    "email": "rockingharsha71@gmail.com",
+    "dob": "2003-02-14T00:00:00.000Z",
+    "contactnumber": "9094717606"
+}
+
+###
+
+DELETE http://localhost:3001/api/users/deleteall
+
+###
+
+PUT http://localhost:3001/api/users/save/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjMwMzU5MSwiZXhwIjoxNjc4ODk1NTkxfQ.gqoVPc9D1L5RbeTXVcmGnQXCkRKNeQzNj4ZeKM342Og
+Content-Type: application/json
+
+{
+	"type": "save",
+	"id": "63e9ab782659354279519644"
+}
+
+###
+
+PUT http://localhost:3001/api/users/save/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjMwMzU5MSwiZXhwIjoxNjc4ODk1NTkxfQ.gqoVPc9D1L5RbeTXVcmGnQXCkRKNeQzNj4ZeKM342Og
+Content-Type: application/json
+
+{
+	"type": "unsave",
+	"id": "63e9ab782659354279519644"
+}
+
+###
+
+PUT http://localhost:3001/api/users/follow/63f5eebaec9a3464ad54ed09
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2Y1ZWViYWVjOWEzNDY0YWQ1NGVkMDkiLCJ1c2VybmFtZSI6ImpvaG4iLCJlbWFpbCI6ImpvaG4xMCIsImlhdCI6MTY3NzA2MjA5NSwiZXhwIjoxNjc5NjU0MDk1fQ.aJt32P4oULiZMSeFSwpRMJfKR64HLq83q7-QWOl2EzQ
+Content-Type: application/json
+
+{
+	"id": "63e9ab782659354279519644"
+}
+
+###
+
+PUT http://localhost:3001/api/users/removefollow/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzA2MzM2MiwiZXhwIjoxNjc5NjU1MzYyfQ.I6A3T7xk_umUta1rwLiInalkttFhOFnTUTDrEki7iLI
+Content-Type: application/json
+
+{
+	"id": "63f5eebaec9a3464ad54ed09"
+}
+
+###
+
+PUT http://localhost:3001/api/users/follow/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzEzNjgzMywiZXhwIjoxNjc5NzI4ODMzfQ.Z-BwWbSZsCpY0bYgM1u5tklrxnrzLeeRU9NqmYRbijA
+Content-Type: application/json
+
+{
+	"id": "63f5eed3ec9a3464ad54ed0f"
+}
+
+###

@@ -1,0 +1,74 @@
+POST http://localhost:3001/api/reports/create/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjM2MDczOCwiZXhwIjoxNjc4OTUyNzM4fQ.JIRb5xwynSEVAgWLVKjFphMQlXRDPwdDizRtSQUmmto
+Content-Type: application/json
+
+{
+  "title": "My first post",
+  "context": "Hello world!",
+  "reportedby": "Harsha",
+  "reporteduser": "harsha71",
+  "postid": "1"
+}
+
+###
+
+GET http://localhost:3001/api/reports/getreports/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NzMzMjg5NCwiZXhwIjoxNjc5OTI0ODk0fQ.2kD-mud43IqEyCl0gIWUO85ozqPMAPTB6qHU5LM-Z8k
+
+###
+
+GET http://localhost:3001/api/reports/getreport/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjM2MTIyNCwiZXhwIjoxNjc4OTUzMjI0fQ.nGXo8eT_3y_xeqTzQpYm3a-ed6lNufCqu6yW1nzDO04
+Content-Type: application/json
+
+{
+    "id": "1"
+}
+
+###
+
+PUT http://localhost:3001/api/reports/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjM2MTIyNCwiZXhwIjoxNjc4OTUzMjI0fQ.nGXo8eT_3y_xeqTzQpYm3a-ed6lNufCqu6yW1nzDO04
+Content-Type: application/json
+
+{
+    "id": "1",
+    "status": "Resolved"
+}
+
+###
+
+PUT http://localhost:3001/api/reports/update/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjM2MTIyNCwiZXhwIjoxNjc4OTUzMjI0fQ.nGXo8eT_3y_xeqTzQpYm3a-ed6lNufCqu6yW1nzDO04
+Content-Type: application/json
+
+{
+    "id": "1",
+    "status": "Pending"
+}
+
+###
+
+DELETE http://localhost:3001/api/reports/delete/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjM2MTIyNCwiZXhwIjoxNjc4OTUzMjI0fQ.nGXo8eT_3y_xeqTzQpYm3a-ed6lNufCqu6yW1nzDO04
+Content-Type: application/json
+
+{
+    "id": "1"
+}
+
+###
+
+DELETE http://localhost:3001/api/reports/deleteall/63e9ab782659354279519644
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5YWI3ODI2NTkzNTQyNzk1MTk2NDQiLCJ1c2VybmFtZSI6ImhhcnNoYSIsImVtYWlsIjoicm9ja2luZ2hhcnNoYTcxQGdtYWlsLmNvbSIsImlhdCI6MTY3NjM2MTIyNCwiZXhwIjoxNjc4OTUzMjI0fQ.nGXo8eT_3y_xeqTzQpYm3a-ed6lNufCqu6yW1nzDO04
+Content-Type: application/json
+
+{
+    "id": "63ea1875d7f594d074c4775c"
+}
+
+###
+
+DELETE http://localhost:3001/api/reports/deleteallforce
+
+###
